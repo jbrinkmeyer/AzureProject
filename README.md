@@ -92,7 +92,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to 40.65.226.160/app/kibana to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
-- Which file is the playbook?filebeat-config.yml Where do you copy it?/etc/filebeat/filebeat.yml
+- Which file is the playbook?filebeat-config.yml Where do you copy it? /etc/filebeat/filebeat.yml
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? filebeat-config.yml
 - Which URL do you navigate to in order to check that the ELK server is running? 40.65.226.160/app/kibana
 

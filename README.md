@@ -40,10 +40,10 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Elk machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-whitelisted IP addresses My Personal Computer IP
+whitelisted IP addresses, My Personal Computer IP
 
 Machines within the network can only be accessed by the Jump Box Provisioner.
-Which machine did you allow to access your ELK VM my personal computer? What was its IP address? 99.96.103.234
+Which machine did you allow to access your ELK VM? my personal computer. What was its IP address? 99.96.103.234
 
 A summary of the access policies in place can be found in the table below.
 
@@ -55,11 +55,10 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-What is the main advantage of automating configuration with Ansible? The machine can be recreated equally and updated easily.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually,
+What is the main advantage of automating configuration with Ansible? The machine can be recreated and updated easily.
 
 The playbook implements the following tasks:
-In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
  - Increase memory available to the ELK box
  - Install docker.io
  - Install pip3
@@ -79,7 +78,6 @@ We have installed the following Beats on these machines:
 - Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
  - Filebeat monitors specified logfiles, collects events that occur and forewards them to Logstash.
  - Metricbeat collects metrics from the operating system and the services that are running on the server. 
 
@@ -94,8 +92,8 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to 40.65.226.160/app/kibana to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
-- _Which file is the playbook?filebeat-config.yml Where do you copy it?/etc/filebeat/filebeat.yml
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? filebeat-config.yml
-- _Which URL do you navigate to in order to check that the ELK server is running? 40.65.226.160/app/kibana
+- Which file is the playbook?filebeat-config.yml Where do you copy it?/etc/filebeat/filebeat.yml
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? filebeat-config.yml
+- Which URL do you navigate to in order to check that the ELK server is running? 40.65.226.160/app/kibana
 
 
